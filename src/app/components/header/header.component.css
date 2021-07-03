@@ -1,0 +1,46 @@
+.sample{
+    color:#FCB7A8;
+    color:#758086;
+    color:#ED6A40;
+    color:#2B4448;
+}
+a, h3 {
+    color: #FCB7A8;
+}
+.navbar{
+    position: absolute;
+    background-color: #2B4448;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+}
+.navbar ul{
+    
+}
+.navbar li{
+    display: inline;
+    padding: 0px 20px;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+
+}
+.navbar li a:hover{
+    color: #ED6A40;
+}
+button{
+    padding: 9px 25px;
+    background-color: #FCB7A8;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+}
+button:hover{
+    background-color: #ED6A40;
+}
