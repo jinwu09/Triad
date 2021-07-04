@@ -1,0 +1,16 @@
+.all{
+    display: flex;
+}
+
+.right{
+    background-color: aliceblue;
+    width: 50%;
+    height: 60vh;
+}
+
+.left{
+    background-color: aqua;
+    width: 50%;
+    height: 60vh;
+}
+
