@@ -1,0 +1,48 @@
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ECEBE2;
+}
+
+.logo{
+    color: #223745;
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.nav-links{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    color: #223745;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        font-size: 18px;
+        align-items:center;
+    }
+    .nav-links{
+        width: 50%;
+    }
+
+    .nav-links li a{
+        font-size: small;
+        letter-spacing: normal;
+    }
+}
