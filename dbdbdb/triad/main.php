@@ -21,6 +21,9 @@
                     $d = json_decode(file_get_contents("php://input"));
                     echo json_encode($auth->login($d));
                     break;
+                case 'register':
+                    $d = json_decode(file_get_contents("php://input"));
+                    echo json_encode($auth->register($d));
             }
             break;
         default:

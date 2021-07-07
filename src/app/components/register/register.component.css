@@ -1,0 +1,20 @@
+.textGroup{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.textGroup-title{
+    font-family: 'Teko', sans-serif !important;
+}
+
+.screen{
+    height: 90vh;
+    width: 100%;
+}
+
+.btn-design{
+    width: 400px;
+}
+ @media screen and (max-width: 1000px) {
+     .textComp{
+        display: none !important;
+     }
+ }
