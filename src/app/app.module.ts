@@ -13,7 +13,9 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ProductComponent } from './components/product/product.component';
 
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,15 +24,21 @@ import { CartComponent } from './components/cart/cart.component';
     RegisterComponent,
     HeaderComponent,
     CartComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+<<<<<<< HEAD
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
+=======
+    HttpClientModule
+
+>>>>>>> Jinwu
   ],
   providers: [],
   bootstrap: [AppComponent]
