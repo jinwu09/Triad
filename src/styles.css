@@ -1,12 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@700&family=Yellowtail&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
 /*
     font-family: 'Yellowtail', cursive;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Teko', sans-serif;
 */
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
