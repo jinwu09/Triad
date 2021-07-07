@@ -1,0 +1,15 @@
+
+.textGroup{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.textGroup-title{
+    font-family: 'Teko', sans-serif !important;
+}
+
+.bgcolor{
+    background-image: linear-gradient(linear, #83a4d4, #b6fbff) !important;
+}
+
+.pic{
+    width: 80vh;
+}
