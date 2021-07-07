@@ -23,6 +23,10 @@ export class LoginComponent implements OnInit {
       email: ['', Validators.required],
       password: ['', Validators.required]
     })
+    
+    if(sessionStorage.getItem("account_id")){
+      this.router.navigate(['cart']);
+    }
   }
 
   onSubmit(event: any){
@@ -34,7 +38,8 @@ export class LoginComponent implements OnInit {
           window.sessionStorage.setItem(
             'account_id', res.data.account_id
           );
-          this.router.navigate(['']);
+          
+          this.router.navigate(['cart']);
         }else if(res.error){
           alert('Error Email or Password Incorrect')
         }
