@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2021 at 10:34 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.0
+-- Generation Time: Jul 09, 2021 at 09:32 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,6 +43,27 @@ CREATE TABLE `accounts_tbl` (
 INSERT INTO `accounts_tbl` (`account_id`, `account_email`, `account_password`, `account_fname`, `account_lname`, `account_address`) VALUES
 (1, 'mark@gmail.com', '123', 'Mark', 'Manuel', 'somewhere');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_tbl`
+--
+
+CREATE TABLE `product_tbl` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(255) NOT NULL,
+  `product_price` float NOT NULL,
+  `product_desc` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product_tbl`
+--
+
+INSERT INTO `product_tbl` (`product_id`, `product_name`, `product_price`, `product_desc`) VALUES
+(4, 'apple case', 123, 'this is for apple phones'),
+(5, 'apple case 1', 123, 'testing');
+
 --
 -- Indexes for dumped tables
 --
@@ -54,6 +75,12 @@ ALTER TABLE `accounts_tbl`
   ADD PRIMARY KEY (`account_id`);
 
 --
+-- Indexes for table `product_tbl`
+--
+ALTER TABLE `product_tbl`
+  ADD PRIMARY KEY (`product_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -62,6 +89,12 @@ ALTER TABLE `accounts_tbl`
 --
 ALTER TABLE `accounts_tbl`
   MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `product_tbl`
+--
+ALTER TABLE `product_tbl`
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
