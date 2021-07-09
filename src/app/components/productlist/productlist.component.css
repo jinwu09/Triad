@@ -1,0 +1,38 @@
+.part{
+    background-color: #ECEBE2;
+}
+h1{
+    margin: auto;
+    padding: 10px 0 20px 0;
+}
+.window{
+    margin: auto;
+    width: 80%;
+    /* border: 3px solid black; */
+    transition: 0.3s;
+    display: flex;
+
+}
+.window :hover{
+    transition: 0.3s;
+    opacity: 0.8;
+
+}
+a{
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    color: #223745;
+}
+.product{
+    width: 180px;
+    border: 1px solid;
+    border-radius: 18px;
+    text-align: center;
+}
+.image{
+    object-fit: contain;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    /* border: 3px solid green; */
+}

@@ -1,0 +1,17 @@
+<div class="part">
+    <div class="window">
+        <h1>Product</h1>
+    </div>
+    <div class="window">
+        <a  *ngFor="let product of products; index as i">
+            <div class="product">
+                <div class="image">
+                    <img src="assets\pics\iphone-12-pro-max_0.png" alt="" class="image">
+                </div>
+                {{ product.product_name }}
+                <br>
+                P {{ product.product_price }}
+            </div>
+        </a>
+    </div>
+</div>
