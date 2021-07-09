@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ProductlistComponent } from './components/productlist/productlist.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CartComponent } from './components/cart/cart.component';
     RegisterComponent,
     HeaderComponent,
     CartComponent,
+    ProductlistComponent,
   ],
   imports: [
     CommonModule,

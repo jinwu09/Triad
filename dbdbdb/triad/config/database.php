@@ -3,7 +3,7 @@
     header('Access-Control-Allow-Credentials: true');
     header("Content-type: text/html; charset=utf-8");
     header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
-    header("Access-Control-Allow-Method: POST");
+    header("Access-Control-Allow-Method: POST");  
     header("Access-Control-Max-Age: 3600");
     set_time_limit(1000);
 
